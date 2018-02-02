@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-testa-home.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-testa-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-testa-home_main.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-testa-home_main.iml" group="address-web-testa-home" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-testa-home_test.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-testa-home_test.iml" group="address-web-testa-home" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-tests_main.iml" group="address-web-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-tests_test.iml" group="address-web-tests" />
