@@ -3,14 +3,13 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigatorHelper {
-  FirefoxDriver wd;
+public class NavigatorHelper extends HelperBase {
 
   NavigatorHelper(FirefoxDriver wd) {
-    this.wd = wd;
+    super (wd);
   }
 
   public void goToHomePage() {
-      wd.findElement(By.linkText("home page")).click();
+      click(By.linkText("home page"));
   }
 }
