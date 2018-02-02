@@ -1,16 +1,15 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
-  FirefoxDriver wd;
+public class ApplicationManager {
+  public FirefoxDriver wd;
 
   public static boolean isAlertPresent(FirefoxDriver wd) {
       try {
@@ -21,12 +20,11 @@ public class TestBase {
       }
   }
 
-  @BeforeMethod
-  public void setUp() throws Exception {
-      wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
-      wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-      wd.get("http://localhost/addressbook/index.php");
-      login("admin", "secret");
+  public void init() {
+    wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+    wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    wd.get("http://localhost/addressbook/index.php");
+    login("admin", "secret");
   }
 
   private void login(String usernmae, String password) {
@@ -39,15 +37,15 @@ public class TestBase {
       wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
   }
 
-  protected void goToHomePage() {
+  public void goToHomePage() {
       wd.findElement(By.linkText("home page")).click();
   }
 
-  protected void submitContactCreation() {
+  public void submitContactCreation() {
       wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
   }
 
-  protected void fillContactData(ContactData contactData) {
+  public void fillContactData(ContactData contactData) {
       wd.findElement(By.name("firstname")).click();
       wd.findElement(By.name("firstname")).clear();
       wd.findElement(By.name("firstname")).sendKeys(contactData.getFirstname());
@@ -62,12 +60,11 @@ public class TestBase {
       wd.findElement(By.name("mobile")).sendKeys(contactData.getMobile());
   }
 
-  protected void initContactCreation() {
-      wd.findElement(By.linkText("add new")).click();
+  public void initContactCreation() {
+    stop();
   }
 
-  @AfterMethod
-  public void tearDown() {
-      wd.quit();
+  public void stop() {
+    wd.findElement(By.linkText("add new")).click();
   }
 }
