@@ -15,7 +15,7 @@ public class TestBase {
 
   @AfterMethod
   public void tearDown() {
-      app.wd.quit();
+      app.getContactHelper().wd.quit();
   }
 
   public ApplicationManager getApp() {
