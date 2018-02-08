@@ -2,12 +2,13 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelperBase {
-  public FirefoxDriver wd;
+  public ChromeDriver wd;
 
-  public HelperBase(FirefoxDriver wd) {
+  public HelperBase(ChromeDriver wd) {
     this.wd = wd;
   }
 

@@ -21,5 +21,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.seleniumhq.selenium:selenium-support:3.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:3.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.seleniumhq.selenium:selenium-api:3.8.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:3.8.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.seleniumhq.selenium:selenium-safari-driver:3.8.1" level="project" />
   </component>
 </module>
