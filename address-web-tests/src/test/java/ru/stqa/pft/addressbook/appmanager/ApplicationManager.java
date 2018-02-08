@@ -10,7 +10,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-  public WebDriver wd;
+  public WebDriver wd = new ChromeDriver();
 
   private SessionHelper sessionHelper;
   private NavigationHelper navigationHelper;
@@ -31,7 +31,7 @@ public class ApplicationManager {
       wd = new SafariDriver();
     }
 
-    wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/group.php");
     groupHelper = new GroupHelper(wd);
     navigationHelper = new NavigationHelper(wd);
