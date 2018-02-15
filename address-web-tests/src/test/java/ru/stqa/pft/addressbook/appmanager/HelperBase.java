@@ -21,7 +21,6 @@ public class HelperBase {
     click(locator);
   }
 
-
   protected void type(By locator, String text) {
     click(locator);
     if (text != null) {
@@ -32,6 +31,7 @@ public class HelperBase {
       }
     }
   }
+
   public boolean isAlertPresent() {
     try {
       wd.switchTo().alert();

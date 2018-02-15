@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,6 +47,25 @@ public class ContactHelper extends HelperBase {
     fillContactForm(contact, b);
     submitContactCreation(By.xpath("//div[@id='content']/form/input[21]"));
     goToHomePage();
+  }
+
+  public void deleteSelectedContacts(By xpath) {
+    wd.findElement(xpath).click();
+  }
+
+  public void selectContact() {
+    if (! wd.findElements(By.name("selected[]")).get(0).isSelected()) {
+      wd.findElements(By.name("selected[]")).get(0).click();
+    }
+  }
+
+  public boolean isAlertPresent() {
+    try {
+      wd.switchTo().alert().accept();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
   }
 
   public boolean isThereAContact() {
