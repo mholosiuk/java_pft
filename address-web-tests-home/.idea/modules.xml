@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/address-web-testa-home.iml" filepath="$PROJECT_DIR$/address-web-testa-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-testa-home_main.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-testa-home_main.iml" group="address-web-testa-home" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/address-web-testa-home_test.iml" filepath="$PROJECT_DIR$/.idea/modules/address-web-testa-home_test.iml" group="address-web-testa-home" />
+    </modules>
+  </component>
+</project>

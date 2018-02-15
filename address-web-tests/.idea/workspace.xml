@@ -2,9 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c30cf93d-86bc-45c2-81c3-ab8238a87ba7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/address-web-testa-home.iml" afterPath="$PROJECT_DIR$/../.idea/modules/address-web-testa-home.iml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__com_beust_jcommander_1_72.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__com_beust_jcommander_1_72.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__com_google_guava_guava_23_0.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__com_google_guava_guava_23_0.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_5.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_5.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_apache_commons_commons_exec_1_3.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_apache_commons_commons_exec_1_3.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_3.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_3.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_6.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_opera_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_opera_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_3_8_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_3_8_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/libraries/Gradle__org_testng_testng_6_13_1.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/libraries/Gradle__org_testng_testng_6_13_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/misc.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/modules.xml" afterPath="$PROJECT_DIR$/../address-web-testa-home/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/modules/address-web-testa-home_main.iml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/modules/address-web-testa-home_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/modules/address-web-testa-home_test.iml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/modules/address-web-testa-home_test.iml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../address-web-tests-home/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/address-web-testa-home.iml" afterPath="$PROJECT_DIR$/../address-web-tests-home/address-web-testa-home.iml" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/build.gradle" afterPath="$PROJECT_DIR$/../address-web-tests-home/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/chromedriver" afterPath="$PROJECT_DIR$/../address-web-tests-home/chromedriver" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/../address-web-tests-home/gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../address-web-tests-home/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/gradlew" afterPath="$PROJECT_DIR$/../address-web-tests-home/gradlew" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/gradlew.bat" afterPath="$PROJECT_DIR$/../address-web-tests-home/gradlew.bat" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/ContactHelper.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/ContactHelper.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/HelperBase.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/HelperBase.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/NavigatorHelper.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/NavigatorHelper.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/SessionHelper.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/appmanager/SessionHelper.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/model/ContactData.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/model/ContactData.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/tasts/ContactCreationTests.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/tasts/ContactCreationTests.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/tasts/ContactModification.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/tasts/ContactModification.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/classes/ru/stqa/pft/addressbook/tasts/TestBase.class" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/classes/ru/stqa/pft/addressbook/tasts/TestBase.class" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/out/test/resources/chromedriver" afterPath="$PROJECT_DIR$/../address-web-tests-home/out/test/resources/chromedriver" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigatorHelper.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigatorHelper.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactCreationTests.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactCreationTests.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModification.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModificationTests.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/TestBase.java" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/java/ru/stqa/pft/addressbook/tasts/TestBase.java" />
+      <change beforePath="$PROJECT_DIR$/../address-web-testa-home/src/test/resources/chromedriver" afterPath="$PROJECT_DIR$/../address-web-tests-home/src/test/resources/chromedriver" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -77,8 +136,8 @@
       <file leaf-file-name="GroupCreationTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -1010,7 +1069,7 @@
       <workItem from="1518536432548" duration="914000" />
       <workItem from="1518604679154" duration="2475000" />
       <workItem from="1518617542021" duration="12212000" />
-      <workItem from="1518682821315" duration="4952000" />
+      <workItem from="1518682821315" duration="6078000" />
     </task>
     <servers />
   </component>
@@ -1047,7 +1106,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53586000" />
+    <option name="totallyTimeSpent" value="54712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="711" extended-state="0" />
@@ -1066,7 +1125,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30533117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30533117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1527,8 +1586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
           <folding />
         </state>
       </provider>
