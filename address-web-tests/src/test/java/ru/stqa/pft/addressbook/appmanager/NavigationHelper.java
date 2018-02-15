@@ -23,6 +23,13 @@ public class NavigationHelper extends HelperBase {
     click(By.linkText("groups"));
   }
 
+  public void goToHomePage() {
+    if (isElementPresent(By.id("maintable"))){
+      return;
+    }
+    click(By.linkText("home page"));
+  }
+
   protected boolean isElementPresent(By locator) {
     try { wd.findElement(locator);
       return true;

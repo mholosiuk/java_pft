@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigatorHelper extends HelperBase {
+public class NavigationHelper extends HelperBase {
 
-  NavigatorHelper(WebDriver wd) {
+  NavigationHelper(WebDriver wd) {
     super ((ChromeDriver) wd);
   }
 

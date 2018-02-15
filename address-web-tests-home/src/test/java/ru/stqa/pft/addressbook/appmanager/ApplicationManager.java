@@ -15,7 +15,7 @@ public class ApplicationManager {
   private WebDriver wd;
 
   private SessionHelper sessionHelper;
-  private NavigatorHelper navigatorHelper;
+  private NavigationHelper navigationHelper;
   private ContactHelper contactHelper;
   private String browser;
 
@@ -36,7 +36,7 @@ public class ApplicationManager {
     wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/index.php");
     contactHelper = new ContactHelper(wd);
-    navigatorHelper = new NavigatorHelper(wd);
+    navigationHelper = new NavigatorHelper(wd);
     sessionHelper = new SessionHelper(wd);
     sessionHelper.login("admin", "secret");
   }
@@ -53,7 +53,7 @@ public class ApplicationManager {
     return contactHelper;
   }
 
-  public NavigatorHelper getNavigatorHelper() {
-    return navigatorHelper;
+  public NavigatorHelper getNavigationHelper() {
+    return navigationHelper;
   }
 }

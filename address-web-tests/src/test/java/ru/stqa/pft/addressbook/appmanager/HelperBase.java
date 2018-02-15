@@ -17,6 +17,11 @@ public class HelperBase {
     wd.findElement(locator).click();
   }
 
+  public void submitContactCreation(By locator) {
+    click(locator);
+  }
+
+
   protected void type(By locator, String text) {
     click(locator);
     if (text != null) {
