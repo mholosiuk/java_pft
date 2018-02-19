@@ -1,29 +1,30 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import static org.testng.Assert.*;
+import ru.stqa.pft.addressbook.model.ContactData;
 
-import java.util.concurrent.TimeUnit;
-import java.util.Date;
-import java.io.File;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
-import ru.stqa.pft.addressbook.model.GroupData;
-
-import static org.openqa.selenium.OutputType.*;
+import java.util.List;
 
 public class ContactDeletionTests extends TestBase {
 
-    @Test
-    public void testContactDeletion() {
-        app.getNavigationHelper().goToHomePage();
-        app.getContactHelper().selectContact();
-        app.getContactHelper().deleteSelectedContacts(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
-        app.getContactHelper().isAlertPresent();
+  @Test
+  public void testContactDeletion() {
+    app.getNavigationHelper().goToHomePage();
+    if (! app.getContactHelper().isThereAContact()) {
+      app.initContactCreation();
+      app.getContactHelper().createContact(new ContactData("test1", "test2", "test3", "test4", "test1"), true);
     }
+    List<ContactData> before = app.getContactHelper().getContactList();
+    app.getContactHelper().selectContact(before.size() - 1);
+    app.getContactHelper().deleteSelectedContacts(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+    app.getContactHelper().isAlertPresent();
+    app.getNavigationHelper().goToHomePage();
+    List<ContactData> after = app.getContactHelper().getContactList();
 
+    Assert.assertEquals(after.size(), before.size() - 1);
+    before.remove(before.size() - 1);
+    Assert.assertEquals(before, after);
+  }
 }
