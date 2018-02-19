@@ -30,6 +30,13 @@ public class ContactHelper extends HelperBase {
     }
   }
 
+  public void modifyContact(ContactData contact) {
+    initContactModification();
+    fillContactForm(contact, false);
+    submitContactModification();
+    goToHomePage();
+  }
+
   public void initContactModification() { click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a")); }
 
   public void submitContactModification() {
