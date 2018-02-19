@@ -42,14 +42,14 @@ public class ApplicationManager {
     sessionHelper.login("admin", "secret");
   }
 
-  public void initContactCreation() { stop(); }
+  public void initContact() { stop(); }
 
   public void stop() { wd.findElement(By.linkText("add new")).click(); }
 
-  public GroupHelper getGroupHelper() { return groupHelper; }
+  public GroupHelper group() { return groupHelper; }
 
-  public NavigationHelper getNavigationHelper() { return navigationHelper; }
+  public NavigationHelper goTo() { return navigationHelper; }
 
-  public ContactHelper getContactHelper() { return contactHelper; }
+  public ContactHelper contact() { return contactHelper; }
 
 }
