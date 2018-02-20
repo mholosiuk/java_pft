@@ -33,10 +33,18 @@ public class ContactHelper extends HelperBase {
     }
   }
 
+  public void create(ContactData contact, boolean b) {
+    fillContactForm(contact, b);
+    submitContactCreation(By.xpath("//div[@id='content']/form/input[21]"));
+    contactCashe = null;
+    goToHomePage();
+  }
+
   public void modify(ContactData contact) {
     initContactModification();
     fillContactForm(contact, false);
     submitContactModification();
+    contactCashe = null;
     goToHomePage();
   }
 
@@ -44,6 +52,7 @@ public class ContactHelper extends HelperBase {
     selectContactById(contact.getId());
     deleteSelectedContacts(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     isAlertPresent();
+    contactCashe = null;
   }
 
   public void initContactModification() { click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a")); }
@@ -53,12 +62,6 @@ public class ContactHelper extends HelperBase {
   }
 
   public void goToHomePage() { click(By.cssSelector("#nav > ul > li:first-child > a")); }
-
-  public void create(ContactData contact, boolean b) {
-    fillContactForm(contact, b);
-    submitContactCreation(By.xpath("//div[@id='content']/form/input[21]"));
-    goToHomePage();
-  }
 
   public void deleteSelectedContacts(By xpath) {
     wd.findElement(xpath).click();
@@ -93,14 +96,19 @@ public class ContactHelper extends HelperBase {
     return wd.findElements(By.xpath("//div[@id='content']/form[1]/input[22]")).size();
   }
 
+  private Contacts contactCashe = null;
+
   public Contacts all() {
-    Contacts contacts = new Contacts();
+    if (contactCashe != null) {
+      return new Contacts(contactCashe);
+    }
+    contactCashe = new Contacts();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr[name='entry']"));
     for (WebElement element : elements) {
       String name = element.getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      contacts.add(new ContactData().withId(id).withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup(null));
+      contactCashe.add(new ContactData().withId(id).withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup(null));
     }
-    return contacts;
+    return new Contacts(contactCashe);
   }
 }
