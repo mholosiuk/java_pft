@@ -9,7 +9,9 @@ import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.nio.channels.SelectableChannel;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -37,8 +39,8 @@ public class ContactHelper extends HelperBase {
     goToHomePage();
   }
 
-  public void delete(int index) {
-    selectContact(index);
+  public void delete(ContactData contact) {
+    selectContactById(contact.getId());
     deleteSelectedContacts(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     isAlertPresent();
   }
@@ -61,9 +63,15 @@ public class ContactHelper extends HelperBase {
     wd.findElement(xpath).click();
   }
 
-  public void selectContact(int index) {
+ /* public void selectContact(int index) {
     if (! wd.findElements(By.name("selected[]")).get(index).isSelected()) {
       wd.findElements(By.name("selected[]")).get(index).click();
+    }
+  }
+*/
+  public void selectContactById(int id) {
+    if (! wd.findElement(By.cssSelector("input[value='" + id + "']")).isSelected()) {
+      wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
   }
 
@@ -84,13 +92,13 @@ public class ContactHelper extends HelperBase {
     return wd.findElements(By.xpath("//div[@id='content']/form[1]/input[22]")).size();
   }
 
-  public List<ContactData> list() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
+  public Set<ContactData> all() {
+    Set<ContactData> contacts = new HashSet<ContactData>();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr[name='entry']"));
     for (WebElement element : elements) {
       String name = element.getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      contacts.add(new ContactData().withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup(null));
+      contacts.add(new ContactData().withId(id).withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup(null));
     }
     return contacts;
   }
