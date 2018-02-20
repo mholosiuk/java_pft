@@ -92,8 +92,8 @@ public class ContactHelper extends HelperBase {
     return isElementPresent(By.xpath("//div[@id='content']/form[1]/input[22]"));
   }
 
-  public int getContactCount() {
-    return wd.findElements(By.xpath("//div[@id='content']/form[1]/input[22]")).size();
+  public int count() {
+    return wd.findElements(By.cssSelector("[name=entry]")).size();
   }
 
   private Contacts contactCashe = null;
