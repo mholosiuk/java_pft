@@ -4,24 +4,27 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
+import java.io.File;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.junit.MatcherAssert.assertThat;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test(enabled = false)
-    public void testContactCreation() {
-        app.goTo().homePage();
-        Contacts before = app.contact().all();
-        ContactData contact = new ContactData()
-                .withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup("test1");
-        app.initContact();
-        app.contact().create(contact, true);
-        assertThat(app.contact().count(), equalTo(before.size() + 1));
-        Contacts after = app.contact().all();
-        assertThat(after, equalTo(
-                before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
-    }
+  @Test
+  public void testContactCreation() {
+    app.goTo().homePage();
+    Contacts before = app.contact().all();
+    File photo = new File("src/test/resources/orionfull_jcc_big.jpg");
+    ContactData contact = new ContactData()
+            .withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup("test1").withPhoto(photo);
+    app.initContact();
+    app.contact().create(contact, true);
+    assertThat(app.contact().count(), equalTo(before.size() + 1));
+    Contacts after = app.contact().all();
+    assertThat(after, equalTo(
+            before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
+  }
 
   @Test(enabled = false)
   public void testBadContactCreation() {
@@ -36,3 +39,5 @@ public class ContactCreationTests extends TestBase {
     assertThat(after, equalTo(before));
   }
 }
+
+
