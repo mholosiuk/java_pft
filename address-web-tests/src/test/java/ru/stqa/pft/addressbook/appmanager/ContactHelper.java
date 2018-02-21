@@ -8,6 +8,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
+import javax.crypto.Cipher;
 import java.nio.channels.SelectableChannel;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -110,6 +111,21 @@ public class ContactHelper extends HelperBase {
       contactCashe.add(new ContactData().withId(id).withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup(null));
     }
     return new Contacts(contactCashe);
+  }
+
+  public Set<ContactData> all1() {
+    Set<ContactData> contacts = new HashSet<ContactData>();
+    List<WebElement> rows = wd.findElements(By.name("entry"));
+    for (WebElement row : rows) {
+      List<WebElement> cells = row.findElements(By.tagName("td"));
+      int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+      String lastname = cells.get(1).getText();
+      String firstname = cells.get(2).getText();
+      String allPhones = cells.get(5).getText();
+      contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
+              .withAllPhones(allPhones));
+    }
+    return contacts;
   }
 
   public ContactData infoFromEditForm(ContactData contact) {
