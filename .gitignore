@@ -12,3 +12,7 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModification.java
+address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModification.java
+address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigatorHelper.java
+address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModification.java
