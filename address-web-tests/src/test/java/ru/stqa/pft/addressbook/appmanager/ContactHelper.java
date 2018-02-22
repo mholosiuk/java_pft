@@ -107,9 +107,12 @@ public class ContactHelper extends HelperBase {
     contactCashe = new Contacts();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr[name='entry']"));
     for (WebElement element : elements) {
-      String name = element.getText();
+      String firstname = element.findElements(By.cssSelector("td")).get(2).getText();
+      String lastname = element.findElements(By.cssSelector("td")).get(1).getText();
+      String address = element.findElements(By.cssSelector("td")).get(3).getText();
+      String mobile = element.findElements(By.cssSelector("td")).get(4).getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      contactCashe.add(new ContactData().withId(id).withFirstname("test1").withLastname("test2").withAddress("test3").withMobile("test4").withGroup(null));
+      contactCashe.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address).withMobile(mobile).withGroup(null));
     }
     return new Contacts(contactCashe);
   }
