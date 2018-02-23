@@ -2,11 +2,10 @@ package ru.stqa.pft.addressbook.generators;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
-import com.beust.jcommander.ParameterException;
-import com.sun.javafx.tools.packager.PackagerException;
-import org.junit.runners.Parameterized;
+import com.thoughtworks.xstream.XStream;
+import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
-import ru.stqa.pft.addressbook.model.Groups;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,21 +21,39 @@ public class GroupDataGenerator {
   @Parameter(names = "-f", description = "Target file")
   public String file;
 
+  @Parameter(names = "-d", description = "Data format")
+  public String format;
+
   public static void main(String[] args) throws IOException {
     GroupDataGenerator generator = new GroupDataGenerator();
     JCommander.newBuilder()
             .addObject(generator)
             .build()
-            .parse(args);
+             .parse(args);
     generator.run();
   }
 
   private void run() throws IOException {
     List<GroupData> groups = generateGroups(count);
-    save(groups, new File(file));
+    if (format.equals("csv")) {
+      saveAsScv(groups, new File(file));
+    } else if (format.equals("xml")) {
+      saveAsXml(groups, new File(file));
+    } else {
+      System.out.println("Unrecognized format " + format);
+    }
   }
 
-  private void save(List<GroupData> groups, File file) throws IOException {
+  private void saveAsXml(List<GroupData> groups, File file) throws IOException {
+    XStream xstream = new XStream();
+    xstream.alias("group", GroupData.class);
+    String xml = xstream.toXML(groups);
+    Writer writer = new FileWriter(file);
+    writer.write(xml);
+    writer.close();
+  }
+
+  private void saveAsScv(List<GroupData> groups, File file) throws IOException {
     System.out.println(new File(".").getAbsoluteFile());
     Writer writer = new FileWriter(file);
     for (GroupData group : groups) {
@@ -49,7 +66,7 @@ public class GroupDataGenerator {
     List<GroupData> groups = new ArrayList<GroupData>();
     for (int i = 0; i < count; i++) {
       groups.add(new GroupData().withName(String.format("test %s", i))
-              .withHeader(String.format("header %s", i)).withFooter(String.format("footer %s", i)));
+              .withHeader(String.format("header\n%s", i)).withFooter(String.format("footer\n%s", i)));
     }
     return groups;
   }
