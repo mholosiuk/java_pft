@@ -16,3 +16,4 @@ address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModifi
 address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModification.java
 address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigatorHelper.java
 address-web-testa-home/src/test/java/ru/stqa/pft/addressbook/tasts/ContactModification.java
+*.log
